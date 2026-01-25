@@ -1,0 +1,21 @@
+[2026-01-25 14:20:50] local.ERROR: filemtime(): stat failed for D:\laravel-sprint1\.env {"exception":"[object] (ErrorException(code: 0): filemtime(): stat failed for D:\\laravel-sprint1\\.env at D:/laravel-sprint1/vendor/laravel/framework/src/Illuminate/Foundation/Console/ServeCommand.php:147)
+[stacktrace]
+#0 D:/laravel-sprint1/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(258): Illuminate/Foundation/Bootstrap/HandleExceptions->handleError()
+#1 [internal function]: Illuminate/Foundation/Bootstrap/HandleExceptions->{closure:Illuminate/Foundation/Bootstrap/HandleExceptions::forwardsTo():257}()
+#2 D:/laravel-sprint1/vendor/laravel/framework/src/Illuminate/Foundation/Console/ServeCommand.php(147): filemtime()
+#3 D:/laravel-sprint1/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate/Foundation/Console/ServeCommand->handle()
+#4 D:/laravel-sprint1/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate/Container/BoundMethod::{closure:Illuminate/Container/BoundMethod::call():35}()
+#5 D:/laravel-sprint1/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate/Container/Util::unwrapIfClosure()
+#6 D:/laravel-sprint1/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod()
+#7 D:/laravel-sprint1/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate/Container/BoundMethod::call()
+#8 D:/laravel-sprint1/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate/Container/Container->call()
+#9 D:/laravel-sprint1/vendor/symfony/console/Command/Command.php(341): Illuminate/Console/Command->execute()
+#10 D:/laravel-sprint1/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony/Component/Console/Command/Command->run()
+#11 D:/laravel-sprint1/vendor/symfony/console/Application.php(1102): Illuminate/Console/Command->run()
+#12 D:/laravel-sprint1/vendor/symfony/console/Application.php(356): Symfony/Component/Console/Application->doRunCommand()
+#13 D:/laravel-sprint1/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun()
+#14 D:/laravel-sprint1/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run()
+#15 D:/laravel-sprint1/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle()
+#16 D:/laravel-sprint1/artisan(16): Illuminate/Foundation/Application->handleCommand()
+#17 {main}
+"} 
