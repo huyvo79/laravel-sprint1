@@ -90,8 +90,10 @@ class ProductController extends Controller
         return response()->json(['message' => 'Import dữ liệu thành công!']);
     }
 
-    public function export()
+    public function export(Request $request)
     {
-        return Excel::download(new ProductsExport, 'danh_sach_san_pham.xlsx');
+        $fileName = 'products_export_' . now()->format('Ymd_His') . '.xlsx';
+
+        return Excel::download(new ProductsExport($request), $fileName);
     }
 }
